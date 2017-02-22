@@ -1,0 +1,115 @@
+/******GENERAL******/
+
+body{
+  /*Police par défaut, fond gris*/
+  font-family: 'Quicksand', sans-serif;
+  background-color: #e3ebff;
+}
+
+.mainWrapper{
+  margin: 20px;
+}
+
+/*Textes*/
+h2:not(.webdev){
+  font-size: 1.8em;
+  font-weight: bold;
+  color: rgb(12, 46, 71);
+  border-bottom: 2px solid rgb(12, 46, 71);
+}
+
+h3{
+  font-size: 1.5em;
+  color: rgb(12, 46, 71)
+}
+
+p{
+  text-align: justify;
+}
+
+ol, ul{
+  list-style: none;
+  text-align: justify;
+}
+
+a{
+  color: black;
+  text-decoration: underline;
+}
+
+a:hover{
+  color: rgb(158, 158, 158);
+  text-decoration: none;
+}
+
+/*blocks*/
+section:not(.first){
+  margin-top: 80px;
+}
+
+/*Nav*/
+.center.navbar .nav,
+.center.navbar .nav > li {
+    float:none;
+    display:inline-block;
+    *display:inline; /* ie7 fix */
+    *zoom:1; /* hasLayout ie7 trigger */
+    vertical-align: top;
+}
+
+.center .navbar-inner {
+    text-align:center;
+}
+
+.center .dropdown-menu {
+    text-align: left;
+}
+
+.navbar a{
+  text-decoration: none;
+}
+
+/*Header*/
+header{
+  /*Centre le h1 et son sous titre avec flex, fond blanc*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(255,255,255);
+  height: 100vh;
+}
+
+#logo{
+  /*Logo est une image*/
+  background: url('../assets/images/linux.jpg');
+  background-size: cover;
+  height:75px;
+  width:75px;
+}
+
+header h1{
+  /*Taille arbitraire du h1*/
+  font-size: 2.5em;
+}
+
+header h2{
+  /*Taille particulière du h2 de header et séparateur*/
+  border-top: 1px solid black;
+  font-size: 2em;
+}
+
+/*Formations*/
+.date{
+  text-align: center;
+}
+
+/*Compétences*/
+.comp .sousTitre{
+  text-align: center;
+}
+
+/*Hobby*/
+.hobby h3{
+  text-align: center;
+}
